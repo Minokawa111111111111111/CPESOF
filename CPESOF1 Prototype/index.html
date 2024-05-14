@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+        <title>Sellington Shop</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                    </div> 
+                    <nav>
+                     <ul id="MenuItems">
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="login.html">Login</a></li>
+                     </ul>
+                    </nav>
+                    <img src="images/menu.png" width="30px" class="menu-icon"  onclick="menutoggle()">
+                 </div>   
+            </div>
+             <div class="row">
+                <div class="colum">
+                    <h1>Sellington Shop</h1>
+                    <p>Affordable curated goods to satisfy your fasion needs!</p>
+                    <a href="catalog.html"class="btn">Shop now &#8594;</a>
+                </div>
+                <div class="colum">
+                    <img src="images/bart-simpson-png-28.png">
+                </div>
+             </div>
+        </div>
+    </div>
+            <!-----featured catalog.html ------->
+            <div class="scontainer">
+                <h2 class="title">New Products</h2>
+                <div class="row">
+                    <div class="colum3">
+                        <img src="images/product-yellow-1.JPG" >
+                        <h4>Ralph Lauren Harrington Jacket</h4>
+                        <p>₱1280.00</p>
+                    </div>
+                    <div class="colum3">
+                        <img src="images/product-red-white.JPG" >
+                        <h4>Vintage Fred Perry Windbreaker</h4>
+                        <p>₱780.00</p>
+                    </div>
+                    <div class="colum3">
+                        <img src="images/product-black.JPG" >
+                        <h4>Fred Perry Windbreaker</h4></a>
+                        <p>₱380.00 - ₱880.00</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="colum3">
+                    <a href="product-details.html"><img src="images/product-denim.JPG" ></a>
+                    <a href="product-details.html"><h4> awit 1</h4></a>
+                    <p>₱100.00</p>
+                </div>
+                <div class="colum3">
+                    <img src="images/product-blue.JPG" >
+                    <h4> awit 1</h4>
+                    <p>₱100.00</p>
+                </div>
+                <div class="colum3">
+                    <img src="images/product-white.JPG" >
+                    <h4> awit 1</h4>
+                    <p>₱100.00</p>
+                </div>
+            </div>
+        </div>
+       </div> 
+            <!------Brands------->
+            <div class="Brands">
+                <div class="scontainer">
+                    <div class="row">
+                        <div class="colum4">
+                            <img src="images/icon-denim.png">
+                        </div>
+                        <div class="colum4">
+                            <img src="images/icon-hoodie.png">
+                        </div>
+                        <div class="colum4">
+                            <img src="images/icon-jacket.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------footer------->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer colum">
+                            <img src="bart.png">
+                            <p>To provide affordable and good quality clothes!</p>
+                        </div>
+                        <div class="footer colum2">
+                            <h3>Links</h3>
+                            <ul>
+                                <li>Live</li>
+                                <li>Return Policy</li>
+                                <li>Joiun Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer colum3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                <hr>
+                <p class="Copyright">Copyright Sellington Shop 2023</p>
+                </div>
+            </div>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight ="0px";
+
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight=="0px"){
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+    </body>
+</html>

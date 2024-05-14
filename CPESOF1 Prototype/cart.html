@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+        <title>All Products</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+    </head>
+    <body>   
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                    </div> 
+                    <nav>
+                     <ul id="MenuItems">
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="account.html"><img src="images/icon-account.png" height="30px"></a></li>
+                        <li><a href="Cart.html"><img src="images/icon-cart.png" width="30px" height="30px"></a></li>
+                     </ul>
+                    </nav>
+                    <img src="images/menu.png" width="30px" class="menu-icon"  onclick="menutoggle()">
+                 </div>   
+            </div>
+        <!---------Cart Details-->
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info" id="item1">
+                            <img src="images/product-yellow-1.JPG">
+                            <div> 
+                                <p>Raph Lauren Harrington Jacket</p>
+                                <small>Price: ₱1280.00 </small>
+                                <br>
+                                <small><i>Mine</i></small>
+                            </div>
+                            <td>
+                                <button class="remove-item-btn" onclick="removeItem()">Remove</button>
+                            </td>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info" id="item2">
+                            <img src="images/product-red-white.JPG">
+                            <div> 
+                                <p>Vintage Fred Perry Windbreak</p>
+                                <small>Price: ₱880.00 </small>
+                                <br>
+                                <small><i>Steal</i></small>
+                            </div>
+                            <td>
+                                <button class="remove-item-btn" onclick="removeItem()">Remove</button>
+                            </td>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info" id="item3">
+                            <img src="images/product-black.JPG">
+                            <div> 
+                                <p>Fred Perry Windbreak</p>
+                                <small>Price: ₱780.00 </small>
+                                <br>
+                                <small><i>Successful Bid</i></small>
+                            </div>
+                            <td>
+                                <button class="remove-item-btn" onclick="removeItem()">Remove</button>
+                            </td>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Total</td>
+                        <td>₱2940.00</td>
+                    </tr>
+                    <tr>
+                        <td><a href="catalog.html"class="btn">Checkout &#8594;</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       </div> 
+            <!------footer----->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer colum">
+                            <img src="images/bart.png">
+                            <p>To provide affordable and good quality clothes!</p>
+                        </div>
+                        <div class="footer colum2">
+                            <h3>Links</h3>
+                            <ul>
+                                <li>Live</li>
+                                <li>Return Policy</li>
+                                <li>Contact Us</li>
+                            </ul>
+                    </div>
+                    <div class="footer colum3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                        </ul>
+                </div>
+                <hr>
+                <p class="Copyright">Copyright Sellington Shop 2023</p>
+                </div>
+            </div>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight ="0px";
+
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight=="0px"){
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+            <script>
+                function removeItem() {
+  
+                var itemToRemove = document.getElementById("item1");
+
+  
+            itemToRemove.parentNode.removeChild(itemToRemove);
+            }   
+            </script>
+            
+    </body>
+</html>

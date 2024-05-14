@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+        <title>All Products</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+        <link rel="stylesheet" href="signup.inc.php">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                    <img src="images/menu.png" width="30px" class="menu-icon"  onclick="menutoggle()">
+                </div>   
+            </div>
+        </div>
+        <!---------Account------->
+         <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="colum">
+                        <img src="images/bart-simpson-png-28.png" width="65%">
+                    </div>
+                    <div class="colum">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="Login()">Login</span>
+                                <span onclick="Signup()">Sign Up</span>
+                                <hr id="Indicator">
+                            </div>
+                            <form id="LoginForm" action="login.inc.php" method="post">
+                                <input type="text" name="name" placeholder="Username">
+                                <input type="password" name="pwd" placeholder="Password">
+                                <button type="submit" name="submit" class="btn">Login</button>
+                                <a href="">Forgot Password?</a>
+                            </form>
+                            <form id="SignupForm" action="signup.inc.php" method="post">
+                                <input type="text" name="uid" placeholder="Username">
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="password" name="pwd" placeholder="Password">
+                                <input type="password" name="pwdrepeat" placeholder="Repeat Password">
+                                <button type="submit" class="btn" name="submit" value="submit">Sign up</button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+            <!------footer----->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer colum">
+                            <img src="images/bart.png">
+                            <p>To provide affordable and good quality clothes!</p>
+                        </div>
+                        <div class="footer colum2">
+                            <h3>Links</h3>
+                            <ul>
+                                <li>Live</li>
+                                <li>Return Policy</li>
+                                <li>Joiun Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer colum3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                            <hr>
+                <p class="Copyright">Copyright Sellington Shop 2023</p>
+                </div>
+            </div>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight ="0px";
+
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight=="0px"){
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+            <!--------Form------->
+            <script>
+                var LoginForm = document.getElementById("LoginForm");
+                var SignupForm = document.getElementById("SignupForm");
+                var Indicator = document.getElementById("Indicator");
+                function Signup(){
+                    SignupForm.style.transform = "translateX(0px)";
+                    LoginForm.style.transform = "translateX(0px)";
+                    Indicator.style.transform = "translateX(100px)";
+                }
+                function Login(){
+                    SignupForm.style.transform = "translateX(300px)";
+                    LoginForm.style.transform = "translateX(300px)";
+                    Indicator.style.transform = "translateX(0px)";
+                }
+            </script>
+            
+    </body>
+</html>

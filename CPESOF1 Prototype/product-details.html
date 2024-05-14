@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+        <title>All Products</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+    </head>
+    <body>   
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                    </div> 
+                    <nav>
+                     <ul id="MenuItems">
+                        <li><a href="catalog.html">Catalog</a></li>
+    
+                        <li><a href="account.html"><img src="images/icon-account.png" height="30px"></a></li>
+                     </ul>
+                    </nav>
+                    <a href="Cart.html"><img src="images/icon-cart.png" width="30px" height="30px"></a>
+                    <img src="menu.png" width="30px" class="menu-icon"  onclick="menutoggle()">
+                 </div>   
+            </div>
+            <!-----product details-->
+            <div class="scontainer product-details">
+                <div class="row">
+                    <div class="colum">
+                        <img src="images/product-yellow-1.JPG" width="100%" id="productImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-colum">
+                            <img src="images/product-yellow-1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-colum">
+                            <img src="images/product-yellow-2.jpg" width="100%"class="small-img">
+                        </div>
+                        <div class="small-img-colum">
+                            <img src="images/product-yellow-3.jpg" width="100%"class="small-img">
+                        </div> 
+                        <div class="small-img-colum">
+                            <img src="images/product-yellow-4.jpg" width="100%"class="small-img">
+                        </div>                         
+                    </div>
+                    </div>
+                    <div class="colum">
+                        <h1>Ralph Lauren Harrington Jacket</h1>
+                        <br>
+                        <p>Mine: ₱1280
+                            <br>
+                            Steal: ₱1480
+                            <br>
+                            Grab: ₱1680
+                            <br>
+                            <br>
+                            Time Left: 05:32
+                        </p>
+                     <a href="Cart.html" class="btn-taken">Mine</a>
+                     <a href="Cart.html" class="btn">Steal</a>
+                     <a href="Cart.html" class="btn">Grab</a>
+                    </div>
+                    <div>
+                        <h3>Product Details</h3>
+                        <br> 
+                        <p><small>
+                            Brand: Polo 
+                            <br>                            
+                            Size: Medium (27" x 24.5")
+                            <br>
+                            Condition: Very good
+                            <br>
+                            Issues: None
+                            <br>
+                            Color: Yellow
+
+
+                        </small></p> 
+                     </div> 
+                </div>
+            </div>
+            <!-------title-->
+            <div class="test">
+                <div class="row row2">
+                    <h2>Related Products</h2>
+                    <li><a href="Products.html">View More</a></li>
+                </div>
+            </div>
+            <!-------Products-->
+            <div class="scontainer">
+                <div class="row">
+                    <div class="colum3">
+                        <a href="Product details.html"><img src="images/product-black.JPG" ></a>
+                        <a href="Product details.html"><h4> awit 1</h4></a>
+                        <p>₱100.00</p>
+                    </div>
+                    <div class="colum3">
+                        <img src="images/product-white.JPG" >
+                        <h4> awit 1</h4>
+                        <p>₱100.00</p>
+                    </div>
+                    <div class="colum3">
+                        <img src="images/product-blue.JPG" >
+                        <h4> awit 1</h4>
+                        <p>₱100.00</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+       </div> 
+            <!------footer----->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer colum">
+                            <img src="bart.png">
+                            <p>To provide affordable and good quality clothes!</p>
+                        </div>
+                        <div class="footer colum2">
+                            <h3>Links</h3>
+                            <ul>
+                                <li>Live</li>
+                                <li>Return Policy</li>
+                                <li>Joiun Affiliate</li>
+                            </ul>
+                        </div>
+                    <div class="footer colum3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                        </ul>
+                </div>
+                <hr>
+                <p class="Copyright">Copyright Sellington Shop 2023</p>
+                </div>
+            </div>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight ="0px";
+
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight=="0px"){
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px"
+                    }
+                }
+            </script>
+            
+            <!-------product gallery------>
+            <script>
+                var productImg= document.getElementById("productImg");
+                var smallImg = document.getElementsByClassName("small-img");
+
+                smallImg[0].onclick=function(){
+                    productImg.src = smallImg[0].src;
+                }
+                smallImg[1].onclick=function(){
+                    productImg.src = smallImg[1].src;
+                }
+                smallImg[2].onclick=function(){
+                    productImg.src = smallImg[2].src;
+                }
+                smallImg[3].onclick=function(){
+                    productImg.src = smallImg[3].src;
+                }
+                
+            </script>
+    </body>
+</html>
